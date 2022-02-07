@@ -15,4 +15,9 @@ const setDate = () => {
     dateYear.textContent = date.toLocaleString('es', { year: 'numeric' });
 };
 
+const addNewTask = event => {
+    event.preventDefault();
+    const { value } = event.target.tastText;
+};
+
 setDate();
