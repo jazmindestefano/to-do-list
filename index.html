@@ -12,24 +12,32 @@
 </head>
 <body>
     <main>
+        <div class="h1">
+            <h1>To-Do List</h1>
+        </div>
+        
+
         <div class="List roundBorder">
 
             <div class="date">
                 
-                <div class="dateRight"></div>
+                <div class="dateLeft">
                 
                     <div id="dateNumber"></div>
                     
-                    <div>
+                    <div class="MonthAndYear">
                         <div id="dateMonth"></div>
                         <div id="dateYear"></div>
                     </div>
+                
+                </div>
             
                 <div id="dateText"></div>
+
             </div>
             
-            <form onsubmit="addNewTask(event)">
-                <input type="text" name="taskText" autocomplete="off" placeholder="Nueva Tarea" class="roundBorder">
+            <form onsubmit="addNewTask(event)" class="complete-form">
+                <input type="text" name="taskText" autocomplete="off" placeholder="Nueva Tarea" class="roundBorder" id="newTask">
                 <button type="submit" class="addTaskButton">+</button>
                 <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
             </form>
