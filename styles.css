@@ -20,7 +20,7 @@ body {
     border-radius: 5px;
 }
 
-.list {
+.List {
     margin: 25px auto;
     padding: 25px;
     background-color: var(--light);
@@ -66,4 +66,47 @@ form {
     grid-auto-flow: column;
     grid-template-columns: auto 53px auto;
     grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus{
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: var(--diabled);
+}
+
+.orderButton { 
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
 }
