@@ -26,7 +26,6 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: var(--diabled);
     
-    min-height: 100vh;
     min-width: 100vw;
 }
 
@@ -36,7 +35,7 @@ body {
     padding: 25px;
     border-radius: 20px;
     width: 80%;
-    height: 250px;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +71,8 @@ body {
 }
 
 #dateNumber {
-    font-size: 50px;
+    font-size: 60px;
+    margin-right: 5px;
 }
 
 #dateMonth,
@@ -86,7 +86,7 @@ body {
     font-size: 25px;
 }
 
-.complete-form {
+#complete-form {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -145,4 +145,16 @@ input:focus{
     background-color: var(--diabled);
     text-decoration: line-through;
     color: var(--dark);
+}
+
+.roundBorder{
+    border-radius: 15px;
+}
+
+#TasksContainer {
+    margin-top: 20px;
+    width: 90%;
+    min-height: 10vh;
+    background-color: var(--light);
+    border-radius: 15px;
 }
