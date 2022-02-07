@@ -1,7 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --primary: #A5C882;
     --secondary: #D33F49;
     --light: #fff;
     --dark: #000;
     --diabled: #e7e7e7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    background-color: var(--diabled);
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder{
+    border-radius: 5px;
 }
