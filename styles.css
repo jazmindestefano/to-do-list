@@ -59,3 +59,11 @@ body {
     margin-left: 7px;
     font-size: 20px;
 }
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 53px auto;
+    grid-column-gap: 15px;
+}
