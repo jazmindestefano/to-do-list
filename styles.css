@@ -141,3 +141,18 @@ main {
 .task.actions button:active {
     opacity: 0.5;
 }
+
+.task .actions .edit {
+    color: var(--pink);
+    font-size: 1rem;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.task .actions .delete {
+    color: crimson;
+    font-size: 1rem;
+}
