@@ -57,3 +57,28 @@ input, button {
     color: var(--light);
     font-size: 1.25rem;
 }
+
+#new-task-input::placeholder{
+    color: var(--gray);
+}
+
+#new-task-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.9;
+}
+
+#new-task-submit:active{
+    opacity: 0.5;
+}
+
+
