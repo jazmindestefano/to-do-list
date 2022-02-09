@@ -8,7 +8,8 @@ window.addEventListener('load', () => {
         e.preventDefault();
 
         const task = input.value;
-        if (!task){
+
+        while (!task){
             alert("Please fill out the task");
             return;
         }
@@ -48,7 +49,8 @@ window.addEventListener('load', () => {
 
         list_element.appendChild(task_element);
 
-        input.value = " ";
+        input.value = "";
+        input.ariaPlaceholder = "What do you have planned?";
 
         task_edit_element.addEventListener('click', () => {
             if (task_edit_element.innerText.toLowerCase() == "edit") {
