@@ -164,3 +164,8 @@ main {
     color: crimson;
     font-size: 1rem;
 }
+
+.task .actions .completed {
+    color: green;
+    font-size: 1rem;
+}
